@@ -1,0 +1,17 @@
+# base modules
+ipython
+psutil
+openpyxl
+xlsxwriter
+xlwt
+xlrd
+pip-upgrader
+# project modules below
+geopandas
+rasterio
+rasterstats
+xarray
+rioxarray
+netCDF4
+beautifulsoup4
+boto3
