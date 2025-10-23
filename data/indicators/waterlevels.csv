@@ -1,0 +1,419 @@
+,month,district,mean
+0,2020-01-01,Bay Area District,131.875
+1,2020-01-01,Central Valley District,663.1974166666666
+2,2020-01-01,Great Basin District,780.7875
+3,2020-01-01,Northern Buttes District,648.5025833333333
+4,2020-01-01,Ocotillo Wells District,-72.412
+5,2020-01-01,Sierra District,1581.9006377597111
+6,2020-02-01,Bay Area District,131.807
+7,2020-02-01,Central Valley District,657.5651666666666
+8,2020-02-01,Great Basin District,780.925
+9,2020-02-01,Northern Buttes District,649.260375
+10,2020-02-01,Ocotillo Wells District,-72.42949999999999
+11,2020-02-01,Sierra District,1582.2663333333335
+12,2020-03-01,Bay Area District,131.748
+13,2020-03-01,Central Valley District,663.706
+14,2020-03-01,Great Basin District,781.182
+15,2020-03-01,Northern Buttes District,649.23
+16,2020-03-01,Ocotillo Wells District,-72.2722
+17,2020-03-01,Sierra District,1582.4952962962964
+18,2020-04-01,Bay Area District,131.621
+19,2020-04-01,Central Valley District,657.0215
+20,2020-04-01,Great Basin District,781.784
+21,2020-04-01,Northern Buttes District,648.93475
+22,2020-04-01,Ocotillo Wells District,-72.2862
+23,2020-04-01,Sierra District,1583.2432106860958
+24,2020-05-01,Bay Area District,131.365
+25,2020-05-01,Central Valley District,664.6772500000001
+26,2020-05-01,Great Basin District,783.097
+27,2020-05-01,Northern Buttes District,648.7106249999999
+28,2020-05-01,Ocotillo Wells District,-72.1945
+29,2020-05-01,Sierra District,1584.336465391621
+30,2020-06-01,Bay Area District,130.47899999999998
+31,2020-06-01,Central Valley District,666.4795
+32,2020-06-01,Great Basin District,783.158
+33,2020-06-01,Northern Buttes District,648.373625
+34,2020-06-01,Ocotillo Wells District,-72.3256
+35,2020-06-01,Sierra District,1584.1679444444444
+36,2020-07-01,Bay Area District,129.248
+37,2020-07-01,Central Valley District,651.0828333333334
+38,2020-07-01,Great Basin District,781.431
+39,2020-07-01,Northern Buttes District,647.34875
+40,2020-07-01,Ocotillo Wells District,-72.345
+41,2020-07-01,Sierra District,1583.3866690953248
+42,2020-08-01,Bay Area District,128.599
+43,2020-08-01,Central Valley District,645.8819166666667
+44,2020-08-01,Great Basin District,778.847
+45,2020-08-01,Northern Buttes District,646.1727083333334
+46,2020-08-01,Ocotillo Wells District,-72.5435
+47,2020-08-01,Sierra District,1582.4316851851852
+48,2020-09-01,Bay Area District,128.199
+49,2020-09-01,Central Valley District,654.0921666666667
+50,2020-09-01,Great Basin District,776.866
+51,2020-09-01,Northern Buttes District,643.3653750000001
+52,2020-09-01,Ocotillo Wells District,-72.4925
+53,2020-09-01,Sierra District,1581.240143304031
+54,2020-10-01,Bay Area District,127.846
+55,2020-10-01,Central Valley District,652.2610164835165
+56,2020-10-01,Great Basin District,776.432
+57,2020-10-01,Northern Buttes District,644.541625
+58,2020-10-01,Ocotillo Wells District,-72.55833333333334
+59,2020-10-01,Sierra District,1580.5903913043478
+60,2020-11-01,Bay Area District,127.509
+61,2020-11-01,Central Valley District,650.3676501831502
+62,2020-11-01,Great Basin District,776.375
+63,2020-11-01,Northern Buttes District,644.2696666666667
+64,2020-11-01,Ocotillo Wells District,-72.65833333333335
+65,2020-11-01,Sierra District,1579.1074444444446
+66,2020-12-01,Bay Area District,127.396
+67,2020-12-01,Central Valley District,647.9325
+68,2020-12-01,Great Basin District,776.293
+69,2020-12-01,Northern Buttes District,644.076493852459
+70,2020-12-01,Ocotillo Wells District,-72.68633333333334
+71,2020-12-01,Sierra District,1578.9212962962963
+72,2021-01-01,Bay Area District,127.207
+73,2021-01-01,Central Valley District,644.8405425925926
+74,2021-01-01,Great Basin District,776.21
+75,2021-01-01,Northern Buttes District,643.927
+76,2021-01-01,Ocotillo Wells District,-72.49533333333333
+77,2021-01-01,Sierra District,1578.6407222222222
+78,2021-02-01,Bay Area District,127.37
+79,2021-02-01,Central Valley District,644.8001685185186
+80,2021-02-01,Great Basin District,776.183
+81,2021-02-01,Northern Buttes District,644.090125
+82,2021-02-01,Ocotillo Wells District,-72.5545
+83,2021-02-01,Sierra District,1578.714722222222
+84,2021-03-01,Bay Area District,127.345
+85,2021-03-01,Central Valley District,645.824
+86,2021-03-01,Great Basin District,776.13
+87,2021-03-01,Northern Buttes District,643.5289999999999
+88,2021-03-01,Ocotillo Wells District,-72.49725000000001
+89,2021-03-01,Sierra District,1578.9004444444445
+90,2021-04-01,Bay Area District,126.676
+91,2021-04-01,Central Valley District,650.5958333333334
+92,2021-04-01,Great Basin District,776.125
+93,2021-04-01,Northern Buttes District,644.465625
+94,2021-04-01,Ocotillo Wells District,-72.56899999999999
+95,2021-04-01,Sierra District,1579.9018333333333
+96,2021-05-01,Bay Area District,125.942
+97,2021-05-01,Central Valley District,655.2826666666667
+98,2021-05-01,Great Basin District,775.99
+99,2021-05-01,Northern Buttes District,644.0571666666667
+100,2021-05-01,Ocotillo Wells District,-72.509
+101,2021-05-01,Sierra District,1580.930733190272
+102,2021-06-01,Bay Area District,125.2
+103,2021-06-01,Central Valley District,654.8496666666666
+104,2021-06-01,Great Basin District,775.077
+105,2021-06-01,Northern Buttes District,643.68575
+106,2021-06-01,Ocotillo Wells District,-72.5188
+107,2021-06-01,Sierra District,1580.836674468153
+108,2021-07-01,Bay Area District,124.323
+109,2021-07-01,Central Valley District,653.74775
+110,2021-07-01,Great Basin District,773.542
+111,2021-07-01,Northern Buttes District,642.6731666666667
+112,2021-07-01,Ocotillo Wells District,-72.6182
+113,2021-07-01,Sierra District,1580.3199708427271
+114,2021-08-01,Bay Area District,123.607
+115,2021-08-01,Central Valley District,653.8434166666666
+116,2021-08-01,Great Basin District,771.685
+117,2021-08-01,Northern Buttes District,642.182375
+118,2021-08-01,Ocotillo Wells District,-72.6305
+119,2021-08-01,Sierra District,1579.333747466824
+120,2021-09-01,Bay Area District,122.71799999999999
+121,2021-09-01,Central Valley District,652.73675
+122,2021-09-01,Great Basin District,772.409
+123,2021-09-01,Northern Buttes District,642.048375
+124,2021-09-01,Ocotillo Wells District,-72.69366666666667
+125,2021-09-01,Sierra District,1578.4835796464768
+126,2021-10-01,Bay Area District,123.009
+127,2021-10-01,Central Valley District,649.7213333333334
+128,2021-10-01,Great Basin District,772.04
+129,2021-10-01,Northern Buttes District,642.052625
+130,2021-10-01,Ocotillo Wells District,-72.84366666666666
+131,2021-10-01,Sierra District,1577.9894170838527
+132,2021-11-01,Bay Area District,123.126
+133,2021-11-01,Central Valley District,651.5081666666666
+134,2021-11-01,Great Basin District,771.98
+135,2021-11-01,Northern Buttes District,641.737
+136,2021-11-01,Ocotillo Wells District,-72.819
+137,2021-11-01,Sierra District,1578.9610620654375
+138,2021-12-01,Bay Area District,123.73
+139,2021-12-01,Central Valley District,651.3740778688524
+140,2021-12-01,Great Basin District,771.946
+141,2021-12-01,Northern Buttes District,642.0403333333334
+142,2021-12-01,Ocotillo Wells District,-72.775
+143,2021-12-01,Sierra District,1579.630455058369
+144,2022-01-01,Bay Area District,124.953
+145,2022-01-01,Central Valley District,653.3376666666667
+146,2022-01-01,Great Basin District,772.6765
+147,2022-01-01,Northern Buttes District,647.7603750000001
+148,2022-01-01,Ocotillo Wells District,-72.75375
+149,2022-01-01,Sierra District,1580.3297852251392
+150,2022-02-01,Bay Area District,125.092
+151,2022-02-01,Central Valley District,653.4002725988701
+152,2022-02-01,Great Basin District,773.449
+153,2022-02-01,Northern Buttes District,642.272875
+154,2022-02-01,Ocotillo Wells District,-72.6965
+155,2022-02-01,Sierra District,1580.7408931696873
+156,2022-03-01,Bay Area District,124.837
+157,2022-03-01,Central Valley District,654.1444166666666
+158,2022-03-01,Great Basin District,773.324
+159,2022-03-01,Northern Buttes District,642.2568333333334
+160,2022-03-01,Ocotillo Wells District,-72.6704
+161,2022-03-01,Sierra District,1581.4287941124937
+162,2022-04-01,Bay Area District,124.382
+163,2022-04-01,Central Valley District,653.1605555555556
+164,2022-04-01,Great Basin District,774.195
+165,2022-04-01,Northern Buttes District,642.3190081967213
+166,2022-04-01,Ocotillo Wells District,-72.68066666666667
+167,2022-04-01,Sierra District,1582.8932975372675
+168,2022-05-01,Bay Area District,123.7405
+169,2022-05-01,Central Valley District,653.93375
+170,2022-05-01,Great Basin District,774.425
+171,2022-05-01,Northern Buttes District,642.243375
+172,2022-05-01,Ocotillo Wells District,-72.64275
+173,2022-05-01,Sierra District,1583.7376349746437
+174,2022-06-01,Bay Area District,122.903
+175,2022-06-01,Central Valley District,655.582
+176,2022-06-01,Great Basin District,774.839
+177,2022-06-01,Northern Buttes District,642.22275
+178,2022-06-01,Ocotillo Wells District,-72.634
+179,2022-06-01,Sierra District,1583.928909585858
+180,2022-07-01,Bay Area District,122.094
+181,2022-07-01,Central Valley District,651.0414166666667
+182,2022-07-01,Great Basin District,773.928
+183,2022-07-01,Northern Buttes District,642.5020000000001
+184,2022-07-01,Ocotillo Wells District,-72.8555
+185,2022-07-01,Sierra District,1583.1798317226878
+186,2022-08-01,Bay Area District,121.369
+187,2022-08-01,Central Valley District,656.6066666666667
+188,2022-08-01,Great Basin District,771.615
+189,2022-08-01,Northern Buttes District,641.9671666666667
+190,2022-08-01,Ocotillo Wells District,-72.90533333333333
+191,2022-08-01,Sierra District,1582.4432994122265
+192,2022-09-01,Bay Area District,120.721
+193,2022-09-01,Central Valley District,650.7943210382514
+194,2022-09-01,Great Basin District,772.5375032679739
+195,2022-09-01,Northern Buttes District,642.01175
+196,2022-09-01,Ocotillo Wells District,-72.95833333333333
+197,2022-09-01,Sierra District,1581.5047060685295
+198,2022-10-01,Bay Area District,120.399
+199,2022-10-01,Central Valley District,650.8094890710382
+200,2022-10-01,Great Basin District,773.4302483660131
+201,2022-10-01,Northern Buttes District,641.93475
+202,2022-10-01,Ocotillo Wells District,-73.088
+203,2022-10-01,Sierra District,1581.004020156469
+204,2022-11-01,Bay Area District,120.223
+205,2022-11-01,Central Valley District,652.3999807555239
+206,2022-11-01,Great Basin District,774.3527516339869
+207,2022-11-01,Northern Buttes District,642.0479166666668
+208,2022-11-01,Ocotillo Wells District,-73.089
+209,2022-11-01,Sierra District,1579.9064265384297
+210,2022-12-01,Bay Area District,120.192
+211,2022-12-01,Central Valley District,649.6293115942029
+212,2022-12-01,Great Basin District,775.2454967320261
+213,2022-12-01,Northern Buttes District,641.93025
+214,2022-12-01,Ocotillo Wells District,-72.98833333333333
+215,2022-12-01,Sierra District,1579.4718300185566
+216,2023-01-01,Bay Area District,123.21350000000001
+217,2023-01-01,Central Valley District,649.8009166666667
+218,2023-01-01,Great Basin District,776.168
+219,2023-01-01,Northern Buttes District,643.344375
+220,2023-01-01,Ocotillo Wells District,-72.97733333333333
+221,2023-01-01,Sierra District,1581.6745673183914
+222,2023-02-01,Bay Area District,125.944
+223,2023-02-01,Central Valley District,655.9125006944445
+224,2023-02-01,Great Basin District,777.975
+225,2023-02-01,Northern Buttes District,650.045625
+226,2023-02-01,Ocotillo Wells District,-72.991
+227,2023-02-01,Sierra District,1582.3145102904607
+228,2023-03-01,Bay Area District,129.955
+229,2023-03-01,Central Valley District,660.8228612500001
+230,2023-03-01,Great Basin District,779.066
+231,2023-03-01,Northern Buttes District,642.878
+232,2023-03-01,Ocotillo Wells District,-72.97999999999999
+233,2023-03-01,Sierra District,1582.3254105448423
+234,2023-04-01,Bay Area District,131.377
+235,2023-04-01,Central Valley District,660.4620997222223
+236,2023-04-01,Great Basin District,787.418
+237,2023-04-01,Northern Buttes District,643.1034583333334
+238,2023-04-01,Ocotillo Wells District,-72.9555
+239,2023-04-01,Sierra District,1582.9455082644627
+240,2023-05-01,Bay Area District,131.415
+241,2023-05-01,Central Valley District,652.8962122222222
+242,2023-05-01,Great Basin District,785.142
+243,2023-05-01,Northern Buttes District,644.2302827868853
+244,2023-05-01,Ocotillo Wells District,-72.98150000000001
+245,2023-05-01,Sierra District,1584.75017630854
+246,2023-06-01,Bay Area District,131.009
+247,2023-06-01,Central Valley District,658.6842833333334
+248,2023-06-01,Great Basin District,780.765
+249,2023-06-01,Northern Buttes District,645.879125
+250,2023-06-01,Ocotillo Wells District,-73.0175
+251,2023-06-01,Sierra District,1586.084732285598
+252,2023-07-01,Bay Area District,130.422
+253,2023-07-01,Central Valley District,662.2935
+254,2023-07-01,Great Basin District,782.4506557377049
+255,2023-07-01,Northern Buttes District,645.9375
+256,2023-07-01,Ocotillo Wells District,-73.16266666666667
+257,2023-07-01,Sierra District,1586.080673553719
+258,2023-08-01,Bay Area District,129.766
+259,2023-08-01,Central Valley District,660.1511666666667
+260,2023-08-01,Great Basin District,784.1925
+261,2023-08-01,Northern Buttes District,645.4383750000001
+262,2023-08-01,Ocotillo Wells District,-73.104
+263,2023-08-01,Sierra District,1584.9135583103766
+264,2023-09-01,Bay Area District,129.10250000000002
+265,2023-09-01,Central Valley District,664.7597695810564
+266,2023-09-01,Great Basin District,785.9343442622951
+267,2023-09-01,Northern Buttes District,644.7284999999999
+268,2023-09-01,Ocotillo Wells District,-73.26175
+269,2023-09-01,Sierra District,1584.1207691143927
+270,2023-10-01,Bay Area District,128.584
+271,2023-10-01,Central Valley District,656.8933333333333
+272,2023-10-01,Great Basin District,787.62
+273,2023-10-01,Northern Buttes District,643.201375
+274,2023-10-01,Ocotillo Wells District,-73.377
+275,2023-10-01,Sierra District,1583.3558888888888
+276,2023-11-01,Bay Area District,128.549
+277,2023-11-01,Central Valley District,651.6709836956521
+278,2023-11-01,Great Basin District,784.047
+279,2023-11-01,Northern Buttes District,644.01575
+280,2023-11-01,Ocotillo Wells District,-73.24666666666667
+281,2023-11-01,Sierra District,1582.7829578020644
+282,2023-12-01,Bay Area District,128.474
+283,2023-12-01,Central Valley District,651.6495996376811
+284,2023-12-01,Great Basin District,782.2755
+285,2023-12-01,Northern Buttes District,644.1513333333334
+286,2023-12-01,Ocotillo Wells District,-73.25666666666666
+287,2023-12-01,Sierra District,1582.47972705314
+288,2024-01-01,Bay Area District,128.729
+289,2024-01-01,Central Valley District,651.8781666666667
+290,2024-01-01,Great Basin District,782.454
+291,2024-01-01,Northern Buttes District,646.12025
+292,2024-01-01,Ocotillo Wells District,-73.22749999999999
+293,2024-01-01,Sierra District,1582.0819468599034
+294,2024-02-01,Bay Area District,131.258
+295,2024-02-01,Central Valley District,654.6591666666667
+296,2024-02-01,Great Basin District,783.366
+297,2024-02-01,Northern Buttes District,648.2173750000001
+298,2024-02-01,Ocotillo Wells District,-73.103
+299,2024-02-01,Sierra District,1582.327962962963
+300,2024-03-01,Bay Area District,133.784
+301,2024-03-01,Central Valley District,657.7652222222223
+302,2024-03-01,Great Basin District,784.566
+303,2024-03-01,Northern Buttes District,648.7221666666667
+304,2024-03-01,Ocotillo Wells District,-73.1078
+305,2024-03-01,Sierra District,1583.0503333333334
+306,2024-04-01,Bay Area District,134.157
+307,2024-04-01,Central Valley District,661.4704166666667
+308,2024-04-01,Great Basin District,785.614
+309,2024-04-01,Northern Buttes District,649.93075
+310,2024-04-01,Ocotillo Wells District,-73.0135
+311,2024-04-01,Sierra District,1585.0616912568305
+312,2024-05-01,Bay Area District,133.72050000000002
+313,2024-05-01,Central Valley District,666.2368611111111
+314,2024-05-01,Great Basin District,788.231
+315,2024-05-01,Northern Buttes District,650.055375
+316,2024-05-01,Ocotillo Wells District,-73.21766666666667
+317,2024-05-01,Sierra District,1586.1130261336102
+318,2024-06-01,Bay Area District,132.861
+319,2024-06-01,Central Valley District,659.3648661202186
+320,2024-06-01,Great Basin District,782.598
+321,2024-06-01,Northern Buttes District,650.1322540983607
+322,2024-06-01,Ocotillo Wells District,-73.28033333333333
+323,2024-06-01,Sierra District,1586.1314030712447
+324,2024-07-01,Bay Area District,132.17
+325,2024-07-01,Central Valley District,653.8060833333333
+326,2024-07-01,Great Basin District,788.035
+327,2024-07-01,Northern Buttes District,649.333
+328,2024-07-01,Ocotillo Wells District,-73.446
+329,2024-07-01,Sierra District,1585.3519602032445
+330,2024-08-01,Bay Area District,131.539
+331,2024-08-01,Central Valley District,658.6345833333334
+332,2024-08-01,Great Basin District,783.451
+333,2024-08-01,Northern Buttes District,648.3721666666667
+334,2024-08-01,Ocotillo Wells District,-73.41025
+335,2024-08-01,Sierra District,1584.2194482519903
+336,2024-09-01,Bay Area District,131.073
+337,2024-09-01,Central Valley District,656.4054166666666
+338,2024-09-01,Great Basin District,780.644
+339,2024-09-01,Northern Buttes District,647.5516557377049
+340,2024-09-01,Ocotillo Wells District,-73.553
+341,2024-09-01,Sierra District,1583.3614332814122
+342,2024-10-01,Bay Area District,130.633
+343,2024-10-01,Central Valley District,654.712
+344,2024-10-01,Great Basin District,779.346
+345,2024-10-01,Northern Buttes District,646.9558333333333
+346,2024-10-01,Ocotillo Wells District,-73.60000000000001
+347,2024-10-01,Sierra District,1582.3050334890968
+348,2024-11-01,Bay Area District,130.337
+349,2024-11-01,Central Valley District,653.4396666666665
+350,2024-11-01,Great Basin District,779.724
+351,2024-11-01,Northern Buttes District,646.5595000000001
+352,2024-11-01,Ocotillo Wells District,-73.7485
+353,2024-11-01,Sierra District,1581.554425925926
+354,2024-12-01,Bay Area District,132.30849999999998
+355,2024-12-01,Central Valley District,652.3040277777778
+356,2024-12-01,Great Basin District,779.988
+357,2024-12-01,Northern Buttes District,647.352493852459
+358,2024-12-01,Ocotillo Wells District,-73.7115
+359,2024-12-01,Sierra District,1581.6210028180353
+360,2025-01-01,Bay Area District,133.37
+361,2025-01-01,Central Valley District,650.7434166666666
+362,2025-01-01,Great Basin District,778.309
+363,2025-01-01,Northern Buttes District,648.38275
+364,2025-01-01,Ocotillo Wells District,-73.79849999999999
+365,2025-01-01,Sierra District,1582.1473902979064
+366,2025-02-01,Bay Area District,134.646
+367,2025-02-01,Central Valley District,653.6563276836159
+368,2025-02-01,Great Basin District,780.345
+369,2025-02-01,Northern Buttes District,649.727625
+370,2025-02-01,Ocotillo Wells District,-73.6975
+371,2025-02-01,Sierra District,1583.061222222222
+372,2025-03-01,Bay Area District,134.32376271186442
+373,2025-03-01,Central Valley District,659.1796891385767
+374,2025-03-01,Great Basin District,782.017
+375,2025-03-01,Northern Buttes District,649.83325
+376,2025-03-01,Ocotillo Wells District,-73.58666666666666
+377,2025-03-01,Sierra District,1569.3781179378532
+378,2025-04-01,Bay Area District,133.967
+379,2025-04-01,Central Valley District,665.296154494382
+380,2025-04-01,Great Basin District,785.088
+381,2025-04-01,Northern Buttes District,650.4168524590164
+382,2025-04-01,Ocotillo Wells District,-73.608
+383,2025-04-01,Sierra District,1570.1566875
+384,2025-05-01,Bay Area District,133.637
+385,2025-05-01,Central Valley District,657.73775
+386,2025-05-01,Great Basin District,788.084
+387,2025-05-01,Northern Buttes District,651.10675
+388,2025-05-01,Ocotillo Wells District,-73.549
+389,2025-05-01,Sierra District,1571.32825
+390,2025-06-01,Bay Area District,133.193
+391,2025-06-01,Central Valley District,657.9693333333333
+392,2025-06-01,Great Basin District,788.48
+393,2025-06-01,Northern Buttes District,651.0159200819672
+394,2025-06-01,Ocotillo Wells District,-73.718
+395,2025-06-01,Sierra District,1571.6191413934425
+396,2025-07-01,Bay Area District,132.548
+397,2025-07-01,Central Valley District,779.7958
+398,2025-07-01,Great Basin District,786.635
+399,2025-07-01,Northern Buttes District,650.3498333333333
+400,2025-07-01,Ocotillo Wells District,-73.8246
+401,2025-07-01,Sierra District,1570.8640625
+402,2025-08-01,Bay Area District,131.6015
+403,2025-08-01,Central Valley District,783.9694666666667
+404,2025-08-01,Great Basin District,784.7
+405,2025-08-01,Northern Buttes District,649.67975
+406,2025-08-01,Ocotillo Wells District,-73.81899999999999
+407,2025-08-01,Sierra District,1569.8045
+408,2025-09-01,Central Valley District,450.295875
+409,2025-09-01,Great Basin District,783.709
+410,2025-09-01,Northern Buttes District,848.9928415300546
+411,2025-09-01,Ocotillo Wells District,-73.71532786885246
+412,2025-09-01,Sierra District,1588.4267213114754
+413,2025-10-01,Central Valley District,710.7895
+414,2025-10-01,Great Basin District,781.628
+415,2025-10-01,Northern Buttes District,709.647
+416,2025-10-01,Ocotillo Wells District,-73.615
+417,2025-10-01,Sierra District,1581.455

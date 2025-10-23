@@ -1,0 +1,127 @@
+,month,district,sum
+0,2020-01-01,Angeles District,4040032.25
+1,2021-01-01,Angeles District,4042280.25
+2,2022-01-01,Angeles District,4044528.25
+3,2023-01-01,Angeles District,4046776.25
+4,2024-01-01,Angeles District,4049024.25
+5,2025-01-01,Angeles District,4051272.25
+6,2020-01-01,Bay Area District,534163.375
+7,2021-01-01,Bay Area District,535709.0125
+8,2022-01-01,Bay Area District,537254.65
+9,2023-01-01,Bay Area District,538800.2875
+10,2024-01-01,Bay Area District,540345.925
+11,2025-01-01,Bay Area District,541891.5625
+12,2020-01-01,Capital District,453274.8125
+13,2021-01-01,Capital District,457039.41875
+14,2022-01-01,Capital District,460804.025
+15,2023-01-01,Capital District,464568.63125
+16,2024-01-01,Capital District,468333.2375
+17,2025-01-01,Capital District,472097.84375
+18,2020-01-01,Central Valley District,1068349.5
+19,2021-01-01,Central Valley District,1078686.975
+20,2022-01-01,Central Valley District,1089024.45
+21,2023-01-01,Central Valley District,1099361.925
+22,2024-01-01,Central Valley District,1109699.4
+23,2025-01-01,Central Valley District,1120036.875
+24,2020-01-01,Channel Coast District,323001.375
+25,2021-01-01,Channel Coast District,325478.76875
+26,2022-01-01,Channel Coast District,327956.1625
+27,2023-01-01,Channel Coast District,330433.55625
+28,2024-01-01,Channel Coast District,332910.95
+29,2025-01-01,Channel Coast District,335388.34375
+30,2020-01-01,Colorado Desert District,129777.765625
+31,2021-01-01,Colorado Desert District,129612.6625
+32,2022-01-01,Colorado Desert District,129447.559375
+33,2023-01-01,Colorado Desert District,129282.45625
+34,2024-01-01,Colorado Desert District,129117.353125
+35,2025-01-01,Colorado Desert District,128952.25
+36,2020-01-01,Diablo Range District,2388866.0
+37,2021-01-01,Diablo Range District,2398032.4
+38,2022-01-01,Diablo Range District,2407198.8
+39,2023-01-01,Diablo Range District,2416365.2
+40,2024-01-01,Diablo Range District,2425531.6
+41,2025-01-01,Diablo Range District,2434698.0
+42,2020-01-01,Gold Fields District,503191.28125
+43,2021-01-01,Gold Fields District,507628.8
+44,2022-01-01,Gold Fields District,512066.31875
+45,2023-01-01,Gold Fields District,516503.8375
+46,2024-01-01,Gold Fields District,520941.35625
+47,2025-01-01,Gold Fields District,525378.875
+48,2020-01-01,Great Basin District,823226.8125
+49,2021-01-01,Great Basin District,822720.9375
+50,2022-01-01,Great Basin District,822215.0625
+51,2023-01-01,Great Basin District,821709.1875
+52,2024-01-01,Great Basin District,821203.3125
+53,2025-01-01,Great Basin District,820697.4375
+54,2020-01-01,Inland Empire District,2284220.25
+55,2021-01-01,Inland Empire District,2291276.65
+56,2022-01-01,Inland Empire District,2298333.05
+57,2023-01-01,Inland Empire District,2305389.45
+58,2024-01-01,Inland Empire District,2312445.85
+59,2025-01-01,Inland Empire District,2319502.25
+60,2020-01-01,Monterey District,114802.2734375
+61,2021-01-01,Monterey District,116098.6359375
+62,2022-01-01,Monterey District,117394.9984375
+63,2023-01-01,Monterey District,118691.3609375
+64,2024-01-01,Monterey District,119987.7234375
+65,2025-01-01,Monterey District,121284.0859375
+66,2020-01-01,North Coast Redwoods District,82538.8203125
+67,2021-01-01,North Coast Redwoods District,83446.24375
+68,2022-01-01,North Coast Redwoods District,84353.6671875
+69,2023-01-01,North Coast Redwoods District,85261.090625
+70,2024-01-01,North Coast Redwoods District,86168.5140625
+71,2025-01-01,North Coast Redwoods District,87075.9375
+72,2020-01-01,Northern Buttes District,367215.4375
+73,2021-01-01,Northern Buttes District,371292.05
+74,2022-01-01,Northern Buttes District,375368.6625
+75,2023-01-01,Northern Buttes District,379445.275
+76,2024-01-01,Northern Buttes District,383521.8875
+77,2025-01-01,Northern Buttes District,387598.5
+78,2020-01-01,Oceano Dunes District,71274.8046875
+79,2021-01-01,Oceano Dunes District,72077.5
+80,2022-01-01,Oceano Dunes District,72880.1953125
+81,2023-01-01,Oceano Dunes District,73682.890625
+82,2024-01-01,Oceano Dunes District,74485.5859375
+83,2025-01-01,Oceano Dunes District,75288.28125
+84,2020-01-01,Ocotillo Wells District,236656.984375
+85,2021-01-01,Ocotillo Wells District,240036.675
+86,2022-01-01,Ocotillo Wells District,243416.365625
+87,2023-01-01,Ocotillo Wells District,246796.05625
+88,2024-01-01,Ocotillo Wells District,250175.746875
+89,2025-01-01,Ocotillo Wells District,253555.4375
+90,2020-01-01,Orange Coast District,839432.0
+91,2021-01-01,Orange Coast District,841056.3
+92,2022-01-01,Orange Coast District,842680.6
+93,2023-01-01,Orange Coast District,844304.9
+94,2024-01-01,Orange Coast District,845929.2
+95,2025-01-01,Orange Coast District,847553.5
+96,2020-01-01,San Diego Coast District,1332384.25
+97,2021-01-01,San Diego Coast District,1339497.775
+98,2022-01-01,San Diego Coast District,1346611.3
+99,2023-01-01,San Diego Coast District,1353724.825
+100,2024-01-01,San Diego Coast District,1360838.35
+101,2025-01-01,San Diego Coast District,1367951.875
+102,2020-01-01,San Luis Obispo Coast District,85862.109375
+103,2021-01-01,San Luis Obispo Coast District,86811.571875
+104,2022-01-01,San Luis Obispo Coast District,87761.034375
+105,2023-01-01,San Luis Obispo Coast District,88710.496875
+106,2024-01-01,San Luis Obispo Coast District,89659.959375
+107,2025-01-01,San Luis Obispo Coast District,90609.421875
+108,2020-01-01,Santa Cruz District,787483.9375
+109,2021-01-01,Santa Cruz District,790076.6
+110,2022-01-01,Santa Cruz District,792669.2625
+111,2023-01-01,Santa Cruz District,795261.925
+112,2024-01-01,Santa Cruz District,797854.5875
+113,2025-01-01,Santa Cruz District,800447.25
+114,2020-01-01,Sierra District,105979.6328125
+115,2021-01-01,Sierra District,107164.290625
+116,2022-01-01,Sierra District,108348.9484375
+117,2023-01-01,Sierra District,109533.60625
+118,2024-01-01,Sierra District,110718.2640625
+119,2025-01-01,Sierra District,111902.921875
+120,2020-01-01,Sonoma-Mendocino Coast District,75277.9453125
+121,2021-01-01,Sonoma-Mendocino Coast District,76105.7890625
+122,2022-01-01,Sonoma-Mendocino Coast District,76933.6328125
+123,2023-01-01,Sonoma-Mendocino Coast District,77761.4765625
+124,2024-01-01,Sonoma-Mendocino Coast District,78589.3203125
+125,2025-01-01,Sonoma-Mendocino Coast District,79417.1640625
