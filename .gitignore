@@ -1,0 +1,8 @@
+.envrc
+data/chirps/
+data/clms/
+data/modis/
+data/dahiti/
+data/ghsl/
+data/indicators/indicators_values/
+terracotta/
