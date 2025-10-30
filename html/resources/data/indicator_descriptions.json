@@ -1,0 +1,87 @@
+{
+    "none": {
+        "left_panel_label": "None",
+        "left_panel_tooltip": "",
+        "info_panel_title": "No district selected",
+        "info_panel_subtitle": "<p>The objective of this platform is to allow decision makers to monitor the state of agriculture by performing cross-analysis on multiple dimensions: temperatures, water access, crops extent, population dynamics, etc.</p><p>You can start navigating by selecting a theme and an indicator in the left panel, and then a region on the map.</p>",
+        "info_panel_disclaimer": "<b>Note:</b> The data for 2025 is provisional and should be compared with caution against previous years, as it represents an incomplete year and may not fully reflect annual trends."
+    },
+    "ndvi": {
+        "left_panel_label": "Vegetation health",
+        "left_panel_tooltip": "Monitored by the Normalized Difference Vegetation Index (NDVI) at 250m resolution",
+        "info_panel_title": "Vegetation health",
+        "info_panel_subtitle": "<p>The Normalized Difference Vegetation Index (NDVI) is an accurate indicator of vegetation health and density. Its values are between -1 and 1: an area with little to no vegetation will have an NDVI value close to 0, while an area with dense and healthy vegetation will have values closer to 1. Water bodies will yield an NDVI value close to -1.</p>",
+        "chart_descriptions": {},
+        "colormap": "calif_ywb",
+        "stretch_range": [-0.2, 0.85],
+        "source": "<b>Source:</b> <a href='https://lpdaac.usgs.gov/products/mod13q1v061/' target='_blank'>Terra MODIS NDVI data MOD13Q1 v061</a>",
+        "type": "raster"
+    },
+    "cropmask": {
+        "left_panel_label": "Crop mask",
+        "left_panel_tooltip": "Displays the areas that are likely to be cultivated based on their NDVI values.",
+        "info_panel_title": "Crop mask",
+        "info_panel_subtitle": "<p>The crop mask was obtained by applying a threshold on the NDVI at the peak of the crop growth cycle. It displays areas that are likely to be cultivated, as it filters out low density or unmaintained vegetation patches.</p>",
+        "chart_descriptions": {},
+        "colormap": "explicit",
+        "binary_color": "198754",
+        "binary_label": "Crop",
+        "source": "<b>Source:</b> Calculated using <a href='https://lpdaac.usgs.gov/products/mod13q1v061/' target='_blank'>Terra MODIS NDVI data</a>",
+        "type": "raster"
+    },
+    "waterlevels": {
+        "left_panel_label": "Water levels",
+        "left_panel_tooltip": "Levels of water in main lakes and resevoirs, derived from satellite observations. The radius of the circles encode the average level of the corresponding lake or reservoir for the selected year.",
+        "info_panel_title": "Water Levels",
+        "info_panel_subtitle": "<p>Water levels derived from satellite observations expressed in meters above the sea level.</p>",
+        "chart_descriptions": {},
+        "colormap": "explicit",
+        "binary_color": "1E4D8B",
+        "binary_label": "Water Levels",
+        "source": "<b>Source:</b> <a href='https://dahiti.dgfi.tum.de/en/' target='_blank'>Database for Hydrological Time Series of Inland Waters (DAHITI)</a>",
+        "type": "vector"
+    },
+    "waterextent": {
+        "left_panel_label": "Water extent",
+        "left_panel_tooltip": "Occurence of water monitored with satellite image at 300m resolution.",
+        "info_panel_title": "Water extent",
+        "info_panel_subtitle": "<p>Water occurence, shown in percentage</p><p>Detects the percentage of occurence of water accross multiple satellite observations. Some area may be missing due to the presence of clouds during the satellite image acquisition.</p>",
+        "type": "raster",
+        "colormap": "calif_blues",
+        "stretch_range": [0, 1],
+        "source": "<b>Source:</b> <a href='https://land.copernicus.eu/en/products/water-bodies/water-bodies-global-v2-0-300m' target='_blank'>Copernicus Land Monitoring Service (CLMS) Water Bodies v2</a>"
+    },
+    "precipitations": {
+        "left_panel_label": "Precipitations",
+        "left_panel_tooltip": "Provided by the CHIRPS dataset with a 5km resolution",
+        "info_panel_title": "Precipitations",
+        "info_panel_subtitle": "<p>Cumulated precipitations, shown in millimeters.</p><p>The CHIRPS dataset gives accurate rainfall estimations from rain gauge and satellite observations with a 5km resolution. The data presented here is the cumulated rainfall (in mm) over the year.</p>",
+        "chart_descriptions": {},
+        "colormap": "calif_blues",
+        "stretch_range": [0, 1000],
+        "source": "<b>Source:</b> <a href='https://www.chc.ucsb.edu/data/chirps' target='_blank'>Climate Hazards Infrared Precipitation with Stations (CHIRPS)</a>",
+        "type": "raster"
+    },
+    "temperature": {
+        "left_panel_label": "Temperature",
+        "left_panel_tooltip": "Provided by the MODIS Land Surface Temperature dataset with a 5km resolution",
+        "info_panel_title": "Temperature",
+        "info_panel_subtitle": "<p>Temperature is shown in degrees Farenheit.</p><p>The temperature data was drawn from MODIS datasets, which map the average daytime temperature with a resolution of 5km. The data presented here is the average daytime temperature over the year.</p>",
+        "chart_descriptions": {},
+        "colormap": "calif_yellows",
+        "stretch_range": [25, 130],
+        "source": "<b>Source:</b> <a href='https://lpdaac.usgs.gov/products/mod21c3v061/' target='_blank'>MODIS/Terra Land Surface Temperature MOD21C3 v061</a>",
+        "type": "raster"
+    },
+    "population": {
+        "left_panel_label": "Population",
+        "left_panel_tooltip": "Estimated population density at 100m resolution",
+        "info_panel_title": "Population",
+        "info_panel_subtitle": "<p>Distribution of the population, expressed as the number of people per 1ha.</p><p>Residential population estimates are derived from a raw global census data. This data has been harmonized and disaggregated to grid cells, informed by the distribution, classification and volume of built-up as mapped in the GHSL global layers.</p>",
+        "chart_descriptions": {},
+        "colormap": "purples",
+        "stretch_range": [0, 100],
+        "source": "<b>Source:</b> <a href='https://ghsl.jrc.ec.europa.eu/download.php?ds=pop' target='_blank'>Global Human Settlement Layer (GHSL) GHS-POP</a>",
+        "type": "raster"
+    }
+}

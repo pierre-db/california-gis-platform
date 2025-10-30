@@ -1,0 +1,474 @@
+@import url("header.css");
+@import url("left-panel.css");
+@import url("right-panel.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fustat:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Official color palette */
+:root{
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-light-gray: #f8f9fa;
+    --bs-gray: #adb5bd;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #1E4D8B;
+    --bs-primary-light: #4A7BB7;
+    --bs-primary-hover: #163A6B;
+    --bs-secondary: #B8860B;
+    --bs-secondary-light: #DAA520;
+    --bs-secondary-hover: #996515;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    
+    /* Enhanced shadows and effects */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Transition variables */
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 350ms ease;
+    
+    /* Border radius */
+    --radius-sm: 2px;
+    --radius: 3px;
+    --radius-md: 4px;
+    --radius-lg: 6px;
+    --radius-xl: 8px;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--bs-gray-800);
+    background-color: var(--bs-light);
+}
+
+a {
+    color: var(--bs-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--bs-primary-hover);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--bs-purple);
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: calc(100vh - 80px);
+    background: linear-gradient(135deg, var(--bs-light) 0%, #ffffff 100%);
+}
+
+#map {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin: 2px;
+    box-shadow: var(--shadow-lg);
+}
+
+#map input[type="checkbox"] {
+    accent-color: var(--bs-primary);
+    transform: scale(1.1);
+    margin: 4px;
+}
+
+#spinner{
+    z-index: 1001;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 24px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#spinner .fa{
+    font-size: 48px;
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-secondary));
+    mask: url("../img/svg/loading.svg");
+    -webkit-mask: url("../img/svg/loading.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    animation: spin 1s ease-in-out infinite, pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Enhanced range slider styling */
+.range-tick {
+    fill: var(--bs-gray-600);
+    transition: fill var(--transition-fast);
+}
+
+.range-tick:hover {
+    fill: var(--bs-primary);
+}
+
+.range-tick:first-child {
+    transform: translateX(2px);
+}
+
+.range-tick:last-child {
+    transform: translateX(-3px);
+}
+
+.tick-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    color: var(--bs-gray-600);
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.tick-min {
+    text-align: left;
+}
+
+.tick-max {
+    text-align: right;
+}
+
+/* Enhanced Font Awesome icons */
+.fa{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background: var(--bs-primary);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.fa:hover {
+    background: var(--bs-primary-hover);
+    transform: translateY(-1px);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.fa:active {
+    transform: translateY(0);
+}
+
+/* Enhanced tooltips */
+.tooltip {
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted var(--bs-gray-400);
+    text-align: left;
+    cursor: help;
+    transition: border-color var(--transition-fast);
+}
+
+.tooltip:hover {
+    border-bottom-color: var(--bs-primary);
+}
+
+.tooltip .top, .tooltip .bottom {
+    padding:10px 20px;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--bs-gray-800) 0%, var(--bs-gray-700) 100%);
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: var(--radius-md);
+    position: absolute;
+    z-index: 1001;
+    box-sizing: border-box;
+    display: none;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    transform: translateY(4px);
+}
+
+.tooltip .top {
+    width: 200px;
+    top: -10px;
+    left: 50%;
+    transform: translate(-30%,-100%);
+}
+
+.tooltip .bottom {
+    max-width: 120px;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tooltip:hover .top, .tooltip:hover .bottom {
+    display: block;
+    opacity: 1;
+    transform: translate(-30%, -100%) translateY(0);
+}
+
+.tooltip:hover .bottom {
+    transform: translate(-50%, 0) translateY(0);
+}
+
+.tooltip .top i, .tooltip .bottom i {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+}
+
+.tooltip .top i {
+    top: 100%;
+    left: 30%;
+    border-color: var(--bs-gray-800) transparent transparent transparent;
+    transform: translateX(-50%);
+}
+
+.tooltip .bottom i {
+    bottom: 100%;
+    left: 50%;
+    border-color: transparent transparent var(--bs-gray-800) transparent;
+    transform: translateX(-50%);
+}
+
+/* Enhanced color indicators */
+.color-box {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+}
+
+a#download-link{
+    display: none;
+}
+
+/* Improved form elements */
+input[type="range"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+    transition: all var(--transition-base);
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    transform: scale(1.05);
+}
+
+/* Modern glass effect for panels */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        height: calc(100vh - 60px);
+    }
+    
+    #map {
+        margin: 4px;
+        border-radius: var(--radius);
+    }
+    
+    .tooltip .top,
+    .tooltip .bottom {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+/* Animation for loading states */
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.loading-shimmer {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: shimmer 1.5s infinite;
+}
+
+/* ========================================
+   Semantic HTML & Accessibility Fixes
+   ======================================== */
+
+/* Screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Button styling for icon buttons */
+#button-start-intro {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    font-size: inherit;
+    transition: opacity var(--transition-fast);
+}
+
+#button-start-intro:hover {
+    opacity: 0.8;
+}
+
+#button-toggle-right-panel {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    font-size: inherit;
+    transition: all var(--transition-base);
+}
+
+/* Color box classes to replace inline styles */
+.color-box-black {
+    background: #000000;
+    width: 2em;
+    height: 4px;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.color-box-gray {
+    background: #333333;
+    width: 2em;
+    height: 4px;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.color-box-black:hover,
+.color-box-gray:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+}
+
+/* Ensure h2 in sections match h3 styling from original */
+.layer-group h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    color: var(--bs-gray-800);
+}
+
+/* Fieldset styling to maintain visual consistency */
+.layer-group fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Tooltip content positioning */
+.tooltip-content {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+
+.tooltip:hover .tooltip-content,
+.tooltip:focus-within .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Switch role styling */
+[role="switch"] {
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+[role="switch"]:hover {
+    transform: scale(1.02);
+}
+
+/* Ensure spans behave like icons */
+span.fa {
+    display: inline-block;
+}
+
+/* Semantic HTML5 elements - ensuring proper display */
+header, main, aside, section, article, nav, footer {
+    display: block;
+}

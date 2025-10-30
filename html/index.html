@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="California Agricultural and Climate Data Visualization Platform - Interactive GIS mapping for agricultural, climate, water, and population data" />
+        <meta name="keywords" content="California, GIS, agriculture, climate, NDVI, precipitation, water levels, Leaflet" />
+        <title>California Agriculture & Climate Platform</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+        <!-- Intro.js -->
+        <link rel="stylesheet" href="https://unpkg.com/intro.js@7.2.0/introjs.css" />
+
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="resources/css/main.css?v=1" />
+    </head>
+
+    <body>
+        <header id="header">
+            <div id="logo">
+            </div>
+            <div id="title">
+                <h1>California Agriculture & Climate Platform</h1>
+            </div>
+            <nav id="icons" aria-label="Main navigation">
+                <button type="button" id="button-start-intro" aria-label="Start tutorial">
+                    <span class="fa fa-book" aria-hidden="true"></span>
+                </button>
+                <a href="mailto:pierre.dalbianco@mgmail.com.com?subject=California Agricultural monitoring platform website" aria-label="Contact us">
+                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                </a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <aside id="left-panel" aria-label="Data controls">
+                <section class="layer-group">
+                    <div class="slider-container" id="right-year">
+                        <h2>Select a year</h2>
+                        <p>Selected year: <strong id="selected-year-right">2025</strong></p>
+                        <label for="year-slider-right" class="sr-only">Year slider from 2020 to 2025</label>
+                        <input class="range" type="range" value="2025" min="2020" max="2025" step="1" id="year-slider-right" aria-valuemin="2020" aria-valuemax="2025" aria-valuenow="2025" aria-label="Select year"/>
+                        <svg role="img" aria-label="Year slider tick marks" width="100%" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="range-tick" x="0.0%" y="3" width="1" height="10"></rect>
+                            <rect class="range-tick" x="20.0%" y="3" width="1" height="10"></rect>
+                            <rect class="range-tick" x="40.0%" y="3" width="1" height="10"></rect>
+                            <rect class="range-tick" x="60.0%" y="3" width="1" height="10"></rect>
+                            <rect class="range-tick" x="80.0%" y="3" width="1" height="10"></rect>
+                            <rect class="range-tick" x="100.0%" y="3" width="1" height="10"></rect>
+                        </svg>
+                        <div class="tick-labels" aria-hidden="true">
+                            <span id="tick-min">2020</span>
+                            <span id="tick-max">2025</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="layer-group" id="left-theme">
+                    <h2>Select a theme</h2>
+                    <label for="themes-selector" class="sr-only">Theme selector</label>
+                    <select name="themes-selector" id="themes-selector" aria-label="Choose data theme">
+                        <option value="agriculture">Agriculture</option>
+                        <option value="climate">Climate</option>
+                        <option value="water">Water</option>
+                        <option value="population">Population</option>
+                    </select>
+                </section>
+                <section class="layer-group" id="left-indicator">
+                    <h2>Select an indicator</h2>
+                    <fieldset aria-label="Indicator selection">
+                    <div>
+                        <input type="radio" name="indicator" value="none" id="indicator-none" checked />
+                        <label for="indicator-none">None</label>
+                    </div>
+                    <div class="layer agriculture">
+                        <input type="radio" name="indicator" value="ndvi" id="indicator-ndvi" />
+                        <label for="indicator-ndvi">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="layer agriculture">
+                        <input type="radio" name="indicator" value="cropmask" id="indicator-cropmask"/>
+                        <label for="indicator-cropmask">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="layer climate">
+                        <input type="radio" name="indicator" value="precipitations" id="indicator-precipitations"/>
+                        <label for="indicator-precipitations">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="layer climate">
+                        <input type="radio" name="indicator" value="temperature" id="indicator-temperature"/>
+                        <label for="indicator-temperature">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="layer water">
+                        <input type="radio" name="indicator" value="waterlevels" id="indicator-waterlevels"/>
+                        <label for="indicator-waterlevels">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="layer water">
+                        <input type="radio" name="indicator" value="waterextent" id="indicator-waterextent"/>
+                        <label for="indicator-waterextent">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    <div class="layer population">
+                        <input type="radio" name="indicator" value="population" id="indicator-population"/>
+                        <label for="indicator-population">
+                            <span class="tooltip">
+                                <span class="left-panel-label"></span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip"></span>
+                                </span>
+                            </span>
+                        </label>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </div>
+                    </fieldset>
+                </section>
+                <section class="layer-group" id="left-layer">
+                    <h2>Layers</h2>
+                    <fieldset aria-label="Map layers">
+                    <div>
+                        <input type="checkbox" name="layer" value="aoi" id="layer-aoi" checked/>
+                        <label for="layer-aoi">
+                            <span class="tooltip">
+                                <span class="left-panel-label">Regions</span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip">
+                                        <span class="color-box color-box-black"></span>
+                                        California regions
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="layer_alt" value="aoi_adm2" id="layer_alt-aoi_adm2"/>
+                        <label for="layer_alt-aoi_adm2">
+                            <span class="tooltip">
+                                <span class="left-panel-label">Districts</span>
+                                <span class="tooltip-content top">
+                                    <span class="left-panel-tooltip">
+                                        <span class="color-box color-box-gray"></span>
+                                        California districts
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    </fieldset>
+                </section>
+            </aside>
+
+            <div id="spinner" role="status" aria-live="polite" aria-label="Loading data">
+                <span class="fa fa-spinner fa-pulse" aria-hidden="true"></span>
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <div id="map" role="application" aria-label="Interactive map"></div>
+
+            <aside id="right-panel" class="open" aria-label="Data information panel">
+                <button type="button" id="button-toggle-right-panel" aria-label="Toggle information panel" aria-expanded="true">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                </button>
+                <article id="content">
+                    <h2 id="right-panel-title"></h2>
+                    <p id="right-panel-subtitle"></p>
+                    <p id="right-panel-intro"></p>
+                    <div class="right-panel-stats-container">
+                        <div class="right-panel-stats">
+                            <span class="tooltip">
+                                <span id="right-panel-pop-stats"></span>
+                                <span class="tooltip-content bottom" role="tooltip">
+                                    <span class="tooltip-label">Population</span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="right-panel-stats">
+                            <span class="tooltip">
+                                <span id="right-panel-idps-stats"></span>
+                                <span class="tooltip-content bottom" role="tooltip">
+                                    <span class="tooltip-label">Population density (ppl/sq mi)</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="right-panel-indicators">
+                        <div id="agriculture-indicator-value" class="indicator-box"></div>
+                        <div id="water-indicator-value" class="indicator-box"></div>
+                        <div id="climate-indicator-value" class="indicator-box"></div>
+                        <div class="indicator-label">
+                            <span class="tooltip">
+                                agriculture
+                                <span class="tooltip-content bottom" role="tooltip">
+                                    <span class="tooltip-label">Vulnerability to agricultural indicators</span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="indicator-label">
+                            <span class="tooltip">
+                                water
+                                <span class="tooltip-content bottom" role="tooltip">
+                                    <span class="tooltip-label">Vulnerability to water indicators</span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="indicator-label">
+                            <span class="tooltip">
+                                climate
+                                <span class="tooltip-content bottom" role="tooltip">
+                                    <span class="tooltip-label">Vulnerability to climate indicators</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="right-panel-chart" class="chart" role="img" aria-label="Monthly indicator chart"></div>
+                    <div id="right-panel-yearly-chart" class="chart" role="img" aria-label="Yearly indicator chart"></div>
+                    <div id="right-panel-switch-charts" class="checked" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle between monthly and yearly indicator view">
+                        <span class="label">Monthly indicator</span>
+                        <span class="switch">
+                          <span></span>
+                        </span>
+                        <span>Yearly indicator</span>
+                    </div>
+                    <footer id="right-panel-disclaimer"></footer>
+                </article>
+            </aside>
+        </main>
+
+        <!-- Scripts -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet-mouse-position@1.2.0/src/L.Control.MousePosition.js"></script>
+        <script src="https://cdn.plot.ly/plotly-2.25.2.min.js"></script>
+        <script src="https://unpkg.com/intro.js@7.2.0/intro.js"></script>
+        <script src="resources/js/app.js?v=1"></script>
+    </body>
+</html>
