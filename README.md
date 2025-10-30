@@ -12,6 +12,16 @@ This platform enables users to explore and analyze:
 
 The application is built with vanilla JavaScript and Leaflet, requiring no backend server. All data processing is performed offline using Python notebooks, generating pre-computed TIFF files for map visualization and JSON files for time series charts.
 
+## Screenshots
+
+### Main Interface
+![Platform Overview](screenshots/screenshot1.png)
+*Interactive map showing agricultural indicators across California regions with the control panel*
+
+### Data Visualization
+![Time Series Analysis](screenshots/screenshot2.png)
+*Detailed regional statistics with time series charts for selected indicators*
+
 ## Project Structure
 
 ```
@@ -95,6 +105,79 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### Environment Variables Configuration
+
+This project uses environment variables for API credentials and configuration. We recommend using **direnv** with a `.envrc` file for automatic environment management.
+
+#### Setting up direnv
+
+1. **Install direnv** (if not already installed):
+   ```bash
+   # macOS
+   brew install direnv
+
+   # Ubuntu/Debian
+   sudo apt-get install direnv
+
+   # Add to your shell (choose one):
+   # For bash: add to ~/.bashrc
+   eval "$(direnv hook bash)"
+
+   # For zsh: add to ~/.zshrc
+   eval "$(direnv hook zsh)"
+   ```
+
+2. **Create a `.envrc` file** in the project root:
+   ```bash
+   touch .envrc
+   ```
+
+3. **Add the following environment variables** to `.envrc`:
+   ```bash
+   # DAHITI API Key for water levels data
+   export DAHITI_API_KEY='your-dahiti-api-key'
+
+   # Copernicus Data Space credentials for water extent data
+   export COPERNICUS_USERNAME='your-copernicus-email'
+   export COPERNICUS_S3_ACCESS_KEY='your-copernicus-s3-access-key'
+   export COPERNICUS_S3_SECRET_KEY='your-copernicus-s3-secret-key'
+
+   # Terracotta custom colormaps folder (if using local tile server)
+   export TC_EXTRA_CMAP_FOLDER=../data/colormaps
+   ```
+
+4. **Allow direnv** to load the file:
+   ```bash
+   direnv allow
+   ```
+
+#### Required Credentials by Data Source
+
+**No credentials needed:**
+- `precipitations` (CHIRPS)
+- `cropmask` (Copernicus CLMS)
+- `population` (GHSL)
+- `ndvi` (MODIS - via public access)
+- `temperature` (MODIS - via public access)
+
+**DAHITI API Key:**
+- `waterlevels` (DAHITI water levels)
+- **How to obtain**:
+  1. Visit the [DAHITI database](https://dahiti.dgfi.tum.de/en/)
+  2. Request API access through their contact form
+  3. Add the provided key to your `.envrc` file
+
+**Copernicus S3 Credentials:**
+- `waterextent` (CLMS Water Bodies)
+- **How to obtain**:
+  1. Register for a free account at [Copernicus Data Space](https://dataspace.copernicus.eu/)
+  2. Follow the [S3 Access documentation](https://documentation.dataspace.copernicus.eu/APIs/S3.html) to generate S3 credentials
+  3. Add your access key and secret key to your `.envrc` file
+
+#### Security Note
+
+**Important**: Never commit your `.envrc` file with actual credentials to version control. The `.envrc` file should be added to `.gitignore`. You can create a `.envrc.example` template file for other developers.
+
 ### Data Processing
 
 The Jupyter notebooks in the `notebooks/` directory handle all data acquisition and processing:
@@ -106,6 +189,60 @@ The Jupyter notebooks in the `notebooks/` directory handle all data acquisition 
 3. **Generate Time Series**: Run `generate_json.ipynb` to create JSON files for time series charts in `data/indicators/`
 
 4. **Generate Color Maps**: Run `generate_colormaps.ipynb` to create legend images for each indicator
+
+### Setting Up Terracotta Tile Server (Optional)
+
+If you want to serve raster tiles dynamically instead of using a remote tile server, you can set up a local Terracotta server:
+
+#### Install Terracotta
+
+```bash
+# should already be installed via the requirements.txt
+pip install terracotta[recommended] 
+```
+
+#### Optimize and Ingest Rasters
+
+```bash
+cd terracotta/
+
+# Step 1: Optimize rasters (convert to Cloud Optimized GeoTIFF)
+terracotta optimize-rasters ../data/aggregates/*.tif -o rasters/
+
+# Alternative with GDAL:
+# for file in ../data/aggregates/*.tif; do
+#     name=$(basename "$file" .tif)
+#     gdal_translate "$file" "rasters/${name}.tif" \
+#         -of COG -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2
+# done
+
+# Step 2: Ingest into database (pattern: {indicator}_{year}.tif)
+terracotta ingest rasters/{name}_{date}.tif -o terracotta.sqlite
+```
+
+#### Start the Server
+
+```bash
+# Basic startup
+terracotta serve -d terracotta.sqlite
+
+# With custom colormaps (if you created custom colormaps in data/colormaps/)
+export TC_EXTRA_CMAP_FOLDER=../data/colormaps
+terracotta serve -d terracotta.sqlite
+```
+
+The tile server will be available at `http://localhost:5001`
+
+**Note**: Custom colormaps in `data/colormaps/` (e.g., `calif_blues.npy`, `calif_yellows.npy`) will be available by their base name (e.g., `calif_blues`, `calif_yellows`) in your tile requests
+
+To use the local tile server, update the `tileServerUrl` in `html/resources/js/app.js`:
+```javascript
+const appState = {
+    // ...
+    tileServerUrl: "http://localhost:5001",  // Change this to your Terracotta server URL
+    // ...
+};
+```
 
 ### Running the Application
 
